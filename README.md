@@ -25,10 +25,13 @@ python results.py
 
 ## Implementation details
 
--The file poissonDistribution.py is used to generate poisson Distribution of cars rent and return.
--In environment.py "\__init__" method the poisson distributions are initialized; in the calc_reward_and_prob method the reward and probility for each state is calculated.
--The policyIteration.py follows the pseudocode of policy iteration described in the book.
--The results.py illustrate the optimal policy.
+1) The file poissonDistribution.py is used to generate poisson Distribution of cars rent and return.
+
+2) For environment.py file, the init() method initialized poisson distributions; the calc_reward_and_prob method calculate the reward and probility of each state.
+
+3) The policyIteration.py follows the pseudocode of policy iteration described in the book, which is used to find the optimal policy.
+
+4) The results.py file is used to illustrate the optimal policy.
 
 ## License
 
