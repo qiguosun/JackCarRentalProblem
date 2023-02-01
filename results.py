@@ -19,7 +19,7 @@ df_policy = pd.DataFrame(
     columns=list(range(STATESPACE[0]))
 )
 plt.figure(figsize=(10, 8))
-sns.heatmap(data=df_policy, vmin=-5, vmax=5, square=True, cmap="Blues_r")
+sns.heatmap(data=df_policy, vmin=-5, vmax=5, square=True)
 plt.title('Policy (Jack\'s Car Rental)')
 plt.xlabel('Cars at B')
 plt.ylabel('Cars at A')
