@@ -9,3 +9,29 @@ If Jack has a car available, he rents it out and is credited \$ 10 by the nation
 Cars become available for renting the day after they are returned. To help ensure that cars are available where they are needed, Jack can move them between the two locations overnight, at a cost of \$ 2 per car moved. 
 
 We assume that the number of cars requested and returned at each location are Poisson random variables, meaning that the probability that the number is n is $P(X=n)=\frac{\lambda ^n}{n!} e^{- \lambda}$, where $\lambda$ is the expected number. Suppose $\lambda$ is 3 and 4 for rental requests at the first and second locations and 3 and 2 for returns. To simplify the problem slightly, we assume that there can be no more than 20 cars at each location (any additional cars are returned to the nationwide company, and thus disappear from the problem) and a maximum of five cars can be moved from one location to the other in one night. We take the discount rate to be $\gamma=0.9$ and formulate this as a continuing finite MDP, where the time steps are days, the state is the number of cars at each location at the end of the day, and the actions are the net numbers of cars moved between the two locations overnight. 
+
+## Run the code
+
+First you could use virtual environment to install the required libraries:
+```python
+pip install -r dependencies.txt
+```
+
+To run the demo, you can run the results.py
+
+```python
+python results.py
+```
+
+## Implementation details
+
+-The file poissonDistribution.py is used to generate poisson Distribution of cars rent and return.
+-In environment.py "\__init__" method the poisson distributions are initialized; in the calc_reward_and_prob method the reward and probility for each state is calculated.
+-The policyIteration.py follows the pseudocode of policy iteration described in the book.
+-The results.py illustrate the optimal policy.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
+
