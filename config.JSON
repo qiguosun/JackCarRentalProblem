@@ -1,0 +1,15 @@
+{
+    "Eps": 1e-2,
+    "GAMMA": 0.9,
+    "MaxMoving": 5,
+    "MU": [
+        2,
+        3,
+        4
+    ],
+    "STATESPACE": [
+        21,
+        2
+    ],
+    "EARN_PER_CAR": 10
+}
